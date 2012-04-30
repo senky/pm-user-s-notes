@@ -1,0 +1,29 @@
+<!-- INCLUDE overall_header.html -->
+
+<h2>{L_NOTES}</h2>
+
+<div class="panel">
+  <div class="inner"><span class="corners-top"><span></span></span>
+
+    <div class="content">
+
+      <form method="post" action="{U_NOTES}">
+        <p>{L_NOTES_DESCRIPTION}</p>
+        <h3>{L_NOTE}</h3>
+        <p>
+          <textarea rows="10" name="note" cols="25" style="width: 99%">{NOTE}</textarea>
+        </p>
+
+        <div style="text-align: center">
+          <input type="hidden" name="snote" value="true" />
+          {S_FORM_TOKEN}
+          <input class="button1" type="submit" value="{L_SAVE_NOTES}" />
+        </div>
+
+      </form>
+
+   </div>
+  <span class="corners-bottom"><span></span></span></div>
+</div>
+
+<!-- INCLUDE overall_footer.html -->
